@@ -15,8 +15,7 @@ export function initReviews() {
   );
 
   if (!reviewsSwiperContainer || !reviewsList) return;
-
-  new Swiper(reviewsSwiperContainer, {
+  new Swiper(".reviews-swiper-container", {
     modules: [Navigation, Keyboard],
     navigation: {
       nextEl: reviewsNextButton,
@@ -26,18 +25,13 @@ export function initReviews() {
       enabled: true,
       onlyInViewport: true,
     },
-    mousewheel: {
-      invert: true,
-    },
+    slidesPerView: 1,
+    centeredSlides: false,
+    loop: false,
     spaceBetween: 16,
     speed: 1100,
-    slidesPerView: 1,
-    loop: true,
     breakpoints: {
       768: {
-        slidesPerView: 2,
-      },
-      1440: {
         slidesPerView: 2,
       },
     },

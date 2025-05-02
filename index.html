@@ -41,6 +41,31 @@
       <a href="#form" class="header-nav-link">Зв'язатись з нами</a>
     </li>
   </ul>
+  <div class="modal-overley is-open visually-hidden">
+    <button type="button" class="modal-close-btn">
+      <svg class="modal-close-icon" width="28" height="28">
+        <use href="/src/img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal">
+      <nav class="nav-menu">
+        <ul class="header-nav-list-menu">
+    <li class="header-nav-item-menu">
+      <a href="#about" class="header-nav-link-menu">Про нас</a>
+    </li>
+    <li class="header-nav-item-menu">
+      <a href="#services" class="header-nav-link-menu">Послуги</a>
+    </li>
+    <li class="header-nav-item-menu">
+      <a href="#benefits" class="header-nav-link-menu">Переваги</a>
+    </li>
+    <li class="header-nav-item-menu">
+      <a href="#form" class="header-nav-link-menu">Зв'язатись з нами</a>
+    </li>
+  </ul>
+      </nav>
+    </div>
+  </div>
   <div class="header-menu-wrapper">
     <button class="header-menu-btn" aria-label="Відкрити меню">
       <svg class="header-menu-icon" width="40" height="40">
@@ -55,7 +80,7 @@
     <main>
       <section id="hero" class="scroll-reveal">
         <div class="hero-wrapper">
-  <div class="hero-container">
+  <div class="hero-container container">
     <h1 class="hero-title">Юридично-технічний офіс</h1>
     <p class="hero-desc">Надійна підтримка в юридичних та технічних питаннях</p>
     <a class="hero-btn" href="#form">Залишити заявку</a>
@@ -245,6 +270,24 @@
               "Команда справді професійна і уважна до деталей."
             </p>
           </li>
+          <li class="review-item swiper-slide">
+  <svg class="reviews-icon" width="40" height="40">
+    <use href="/src/img/icons.svg#icon-profile-female"></use>
+  </svg>
+  <h3 class="review-name">Ірина П.</h3>
+  <p class="review-desc">
+    "Чудовий сервіс! Отримала відповіді на всі питання дуже швидко."
+  </p>
+</li>
+<li class="review-item swiper-slide">
+  <svg class="reviews-icon" width="40" height="40">
+    <use href="/src/img/icons.svg#icon-profile-male"></use>
+  </svg>
+  <h3 class="review-name">Василь Д.</h3>
+  <p class="review-desc">
+    "Результат перевершив очікування. Дуже вдячний за якісну роботу!"
+  </p>
+</li>
         </ul>
         <div class="reviews-button-wrapper">
           <button class="reviews-swiper-button-prev">
@@ -285,9 +328,6 @@
     <iframe
       class="map"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2634.6213048372233!2d28.856868476453823!3d48.67448477130776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cd410ff9b0b0bb%3A0x263a969afd96a746!2z0K7RgNC40LTQuNGH0L3Qvi3RgtC10YXQvdGW0YfQvdC40Lkg0L7RhNGW0YEgItCa0LLQsNC00YDQsNGCINC_0LvRjtGBIg!5e0!3m2!1sru!2sua!4v1746029991576!5m2!1sru!2sua"
-      width="600"
-      height="450"
-      style="border: 0"
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
@@ -323,7 +363,7 @@
     <footer id="footer">
       <div class="footer-wrapper">
         <div class="container footer-container">
-          <p><small>&copy; 2025 Всі права захищені</small></p>
+          <p>&copy; 2025 Всі права захищені</p>
           <address class="footer-contacts">
             <a class="footer-link" href="mailto:ofistulchin@gmail.com">
               <svg class="footer-icon" width="20" height="20">

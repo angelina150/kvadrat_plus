@@ -24,3 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollAnimation();
   initReviews();
 });
+
+const menuButton = document.querySelector(".header-menu-btn");
+const modalOverlay = document.querySelector(".modal-overley");
+const closeModalButton = document.querySelector(".modal-close-btn");
+
+function openModal() {
+  modalOverlay.classList.add("is-open");
+}
+
+function closeModal() {
+  modalOverlay.classList.remove("is-open");
+}
+
+menuButton.addEventListener("click", openModal);
+closeModalButton.addEventListener("click", closeModal);
