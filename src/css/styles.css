@@ -113,22 +113,33 @@ body {
 .modal-close-icon {
   stroke: #fff;
 }
-.modal-overley {
+
+.modal-overlay {
   position: fixed;
   top: 0;
   right: 0;
-  width: 60vw;
-  max-width: 500px;
+  width: 100%;
   height: 100%;
-  background-color: rgb(41, 77, 44);
+  background-color: rgba(23, 23, 23, 0.452);
   display: none;
-  justify-content: center;
-  align-items: center;
-  z-index: 100;
+  z-index: 10;
 }
 
-.modal-overley.is-open {
+.modal-overlay.is-open {
   display: flex;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+  max-width: 500px;
+  height: 100vh;
+  background-color: rgb(41, 77, 44);
 }
 
 .modal-close-btn {
@@ -138,20 +149,32 @@ body {
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 11;
 }
+
 .header-nav-list-menu {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .header-nav-item-menu {
-  padding: 10px 15px;
   color: rgb(53, 90, 53);
   background-color: #ffffffe1;
   border: 2px solid transparent;
   border-radius: 30px;
   text-align: center;
+  padding: 10px 15px;
+  max-width: 250px;
+  transition: all 0.3s ease;
 }
+
+.header-nav-link-menu {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
 .header-nav-item-menu:hover {
   border: 2px solid #dfd21d;
 }

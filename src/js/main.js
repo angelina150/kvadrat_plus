@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const menuButton = document.querySelector(".header-menu-btn");
 
-const modalOverlay = document.querySelector(".modal-overley");
+const modalOverlay = document.querySelector(".modal-overlay");
 
 const closeModalButton = document.querySelector(".modal-close-btn");
 
@@ -41,3 +41,23 @@ function closeModal() {
 
 menuButton.addEventListener("click", openModal);
 closeModalButton.addEventListener("click", closeModal);
+
+modalOverlay.addEventListener("click", (e) => {
+  if (e.target === modalOverlay) {
+    closeModal();
+  }
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && modalOverlay.classList.contains("is-open")) {
+    closeModal();
+  }
+});
+
+const menuItems = document.querySelectorAll(".header-nav-item-menu");
+
+menuItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    closeModal();
+  });
+});
