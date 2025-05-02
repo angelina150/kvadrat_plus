@@ -308,15 +308,15 @@
 
       </section>
       <section id="form" class="scroll-reveal"><div class="form-wrapper container">
-  <div class=" container"></div>>
  <h2 class="title form-title">Зв'язатися з нами</h2>
-  <form class="form">
-    <h3 class="title-form">Залиште нам повідомлення</h3>
-    <input class="from-input" type="text" placeholder="Ваше ім'я" />
-    <input class="from-input" type="email" placeholder="Email" />
-    <textarea class="from-text" placeholder="Повідомлення"></textarea>
-    <button class="form-btn" type="submit">Надіслати</button>
-  </form>
+  <form id="contact-form" class="form" action="https://formspree.io/f/xzzreeoq" method="POST">
+  <h3 class="title-form">Залиште нам повідомлення</h3>
+  <input class="from-input" type="text" name="name" placeholder="Ваше ім'я" required />
+  <input class="from-input" type="email" name="email" placeholder="Email" required />
+  <textarea class="from-text" name="message" placeholder="Повідомлення" required></textarea>
+  <button class="form-btn" type="submit">Надіслати</button>
+</form>
+<div id="form-response" style="display:none; color: green;">Дякуємо за ваше повідомлення!</div>
   </div>
  
 </div>
