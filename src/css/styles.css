@@ -476,6 +476,8 @@ body {
   max-width: 350px;
   cursor: pointer;
   text-align: justify;
+  vertical-align: middle;
+  margin-bottom: 20px;
 }
 .location-link:hover {
   color: rgb(53, 90, 53);
