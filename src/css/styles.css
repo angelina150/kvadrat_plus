@@ -478,7 +478,7 @@ body {
   margin: 0 auto;
   display: block;
   border-radius: 30px;
-  width: 350px;
+  max-width: 350px;
   height: 300px;
   border: none;
 }
@@ -568,6 +568,9 @@ body {
   .from-text {
     max-width: 300px;
   }
+  .map {
+    width: 350px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -644,8 +647,12 @@ body {
     justify-content: center;
     align-content: center;
     justify-items: center;
-    align-items: center;
-    gap: 30px;
+    align-items: start;
+    gap: 20px;
+  }
+  .map {
+    height: 100%;
+    width: 100%;
   }
   .footer-contacts {
     display: flex;
@@ -690,8 +697,9 @@ body {
     height: auto;
     object-fit: cover;
   }
-  .map-wrapper {
-    gap: 60px;
+
+  .map {
+    max-width: 500px;
   }
   .title {
     letter-spacing: -0.04em;
